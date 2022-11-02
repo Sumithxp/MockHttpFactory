@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace MyService.Tests
 {
-    public class MockFakeService
+    public class MockFakeApi
     {
         public Mock<HttpMessageHandler> handlerMock;
         public Mock<IHttpClientFactory> mockHttpClientFactory;
-        public MockFakeService()
+        public MockFakeApi()
         {
             var fixture = new Fixture();
             var testUri = fixture.Create<Uri>();

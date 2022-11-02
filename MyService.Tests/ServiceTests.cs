@@ -14,7 +14,7 @@ public class Tests
     public void Setup()
     {
 
-        var mockServiceslingapps = new MockFakeService();
+        var mockServiceslingapps = new MockFakeApi();
         handlerMock = mockServiceslingapps.handlerMock;
         mockHttpClientFactory = mockServiceslingapps.mockHttpClientFactory;
         _service = new Service(mockHttpClientFactory.Object);
